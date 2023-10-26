@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PaymentDetails.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PaymentDetailsViweBody.dart';
 import 'package:payapp/core/utls/CoustomBottom.dart';
 import 'package:svg_flutter/svg.dart';
 
@@ -67,7 +67,7 @@ class mycartviwe extends StatelessWidget {
     Navigator.of(context).push(
       MaterialPageRoute(
         builder: (context) {
-          return const PaymentDetailsViwe();
+          return const PaymentDetailsViweBody();
         },
       ),
     );

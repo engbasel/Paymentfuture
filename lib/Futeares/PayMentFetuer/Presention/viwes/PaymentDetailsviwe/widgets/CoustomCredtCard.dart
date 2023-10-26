@@ -1,8 +1,15 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class CustomCreditCard extends StatefulWidget {
-  const CustomCreditCard({super.key});
+  const CustomCreditCard({
+    Key? key,
+    required this.globalKey,
+    required this.autovalidateMode,
+  }) : super(key: key);
+  final GlobalKey<FormState> globalKey;
+  final AutovalidateMode autovalidateMode;
 
   @override
   State<CustomCreditCard> createState() => _CustomCreditCardState();
@@ -35,20 +42,22 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           onCreditCardWidgetChange: (value) {},
         ),
         CreditCardForm(
-            // isHolderNameVisible: true,
-            cardNumber: cardNumber,
-            expiryDate: expiryDate,
-            cardHolderName: cardHolderName,
-            cvvCode: cvvCode,
-            onCreditCardModelChange: (CreditCardModel) {
-              cardHolderName = CreditCardModel.cardHolderName;
-              cardNumber = CreditCardModel.cardNumber;
-              expiryDate = CreditCardModel.expiryDate;
-              cvvCode = CreditCardModel.cvvCode;
-              showBackView = CreditCardModel.isCvvFocused;
-              setState(() {});
-            },
-            formKey: formKey)
+          autovalidateMode: widget.autovalidateMode,
+          // isHolderNameVisible: true,
+          cardNumber: cardNumber,
+          expiryDate: expiryDate,
+          cardHolderName: cardHolderName,
+          cvvCode: cvvCode,
+          onCreditCardModelChange: (CreditCardModel) {
+            cardHolderName = CreditCardModel.cardHolderName;
+            cardNumber = CreditCardModel.cardNumber;
+            expiryDate = CreditCardModel.expiryDate;
+            cvvCode = CreditCardModel.cvvCode;
+            showBackView = CreditCardModel.isCvvFocused;
+            setState(() {});
+          },
+          formKey: widget.globalKey,
+        )
       ],
     );
   }
