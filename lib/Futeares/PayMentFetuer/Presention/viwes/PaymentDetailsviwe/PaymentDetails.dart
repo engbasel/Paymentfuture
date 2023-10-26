@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/widgets/PayMentMethoListViwe.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PayMentMethoListViwe.dart';
 import 'package:svg_flutter/svg.dart';
 
 import 'package:payapp/core/utls/style.dart';

@@ -1,12 +1,12 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetails.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PaymentDetails.dart';
 import 'package:payapp/core/utls/CoustomBottom.dart';
 import 'package:svg_flutter/svg.dart';
 
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/widgets/CoustomDivider.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/widgets/RowOrderInfo.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/widgets/TotalPrice.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/GeneralWidgets/CoustomDivider.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/myCartViweviwe/widgets/RowOrderInfo.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/myCartViweviwe/widgets/TotalPrice.dart';
 import 'package:payapp/core/utls/style.dart';
 
 class mycartviwe extends StatelessWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/widgets/payment_method_Item.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/widgets/payment_method_Item.dart';
 
 class PaymentMethodsListView extends StatefulWidget {
   const PaymentMethodsListView({Key? key}) : super(key: key);
