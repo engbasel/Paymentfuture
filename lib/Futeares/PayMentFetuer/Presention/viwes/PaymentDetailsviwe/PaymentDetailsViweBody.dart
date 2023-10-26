@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PayMentMethoListViwe.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/widgets/CoustomCredtCard.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/Thankyouviwe/Thankyouviwe.dart';
 import 'package:payapp/core/utls/CoustomBottom.dart';
 import 'package:svg_flutter/svg.dart';
 
@@ -82,7 +83,19 @@ class _PaymentDetailsViweBodyState extends State<PaymentDetailsViweBody> {
       formKey.currentState!.save();
     } else {
       AutovalidateMode.values;
+      NavigationMethod();
       setState(() {});
     }
+  }
+
+  void NavigationMethod() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) {
+          return const Thankyouviwe();
+        },
+      ),
+    );
   }
 }

@@ -4,7 +4,7 @@ import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviw
 import 'package:payapp/core/utls/CoustomBottom.dart';
 import 'package:svg_flutter/svg.dart';
 
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/GeneralWidgets/CoustomDivider.dart';
+import 'package:payapp/core/utls/CoustomDivider.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/myCartViweviwe/widgets/RowOrderInfo.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/myCartViweviwe/widgets/TotalPrice.dart';
 import 'package:payapp/core/utls/style.dart';

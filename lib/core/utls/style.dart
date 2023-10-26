@@ -36,4 +36,12 @@ abstract class styleing {
     color: Color(0xff000000),
     height: 22 / 18,
   );
+
+  static TextStyle style20W400 = const TextStyle(
+    fontFamily: "Inter",
+    fontSize: 20,
+    fontWeight: FontWeight.w400,
+    color: Color(0xff000000),
+    height: 29 / 24,
+  );
 }
