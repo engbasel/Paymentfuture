@@ -6,9 +6,35 @@ class Thankyouviwe extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      // appBar: AppBar(
+      //   elevation: 0,
+      //   backgroundColor: Colors.white,
+      //   title: const Text('data'),
+      // ),
       backgroundColor: Colors.white,
-      body: ThankyouviweBody(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    child: IconButton(
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                        icon: const Icon(Icons.arrow_back)),
+                  )
+                ],
+              ),
+              Transform.translate(
+                  offset: const Offset(0, -60),
+                  child: const ThankyouviweBody()),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

@@ -11,14 +11,17 @@ class ThankyouviweBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Stack(
-      children: [
-        ThankYouCard(),
-        LeftPositionedCircle(),
-        TrueIcon(),
-        RightPositionedCircle(),
-        Dashedline(),
-      ],
+    return const Padding(
+      padding: EdgeInsets.only(top: 6),
+      child: Stack(
+        children: [
+          ThankYouCard(),
+          LeftPositionedCircle(),
+          TrueIcon(),
+          RightPositionedCircle(),
+          Dashedline(),
+        ],
+      ),
     ); // RoundedRetang1eBorder
 // ShapeDecoration
 // Container

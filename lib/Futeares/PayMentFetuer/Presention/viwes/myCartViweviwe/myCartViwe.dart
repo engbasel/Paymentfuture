@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PaymentDetailsViweBody.dart';
+import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PayMentMethoListViwe.dart';
 import 'package:payapp/core/utls/CoustomBottom.dart';
 import 'package:svg_flutter/svg.dart';
 
@@ -64,12 +64,42 @@ class mycartviwe extends StatelessWidget {
   }
 
   void navigationMethod(BuildContext context) {
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (context) {
-          return const PaymentDetailsViweBody();
-        },
+    showModalBottomSheet(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15),
       ),
+      context: context,
+      builder: (context) {
+        return const PaymentMethodsBottomSheet();
+      },
+    );
+    // Navigator.of(context).push(
+    //   MaterialPageRoute(
+    //     builder: (context) {
+    //       return const PaymentDetailsViweBody();
+    //     },
+    //   ),
+    // );
+  }
+}
+
+class PaymentMethodsBottomSheet extends StatelessWidget {
+  const PaymentMethodsBottomSheet({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const SizedBox(height: 15),
+        const PaymentMethodsListView(),
+        const SizedBox(height: 15),
+        CustomButton(
+          ButtonTitle: 'Continue ',
+          ontap: () {},
+        ),
+        const SizedBox(height: 50),
+      ],
     );
   }
 }
