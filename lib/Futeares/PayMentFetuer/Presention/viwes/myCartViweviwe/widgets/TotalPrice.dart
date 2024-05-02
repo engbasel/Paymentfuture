@@ -13,10 +13,10 @@ class TotalPrice extends StatelessWidget {
       children: [
         Text(
           Total,
-          style: styleing.style24,
+          style: Styles.style24,
         ),
         const Spacer(),
-        Text(value, style: styleing.style24)
+        Text(value, style: Styles.style24)
       ],
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-abstract class styleing {
+abstract class Styles {
   static TextStyle style25 = const TextStyle(
     fontFamily: "Inter",
     fontSize: 25,

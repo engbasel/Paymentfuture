@@ -17,10 +17,10 @@ class RowOrderInfo extends StatelessWidget {
       children: [
         Text(
           Order,
-          style: styleing.style18,
+          style: Styles.style18,
         ),
         const Spacer(),
-        Text(vale, style: styleing.style18)
+        Text(vale, style: Styles.style18)
       ],
     );
   }

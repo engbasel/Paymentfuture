@@ -38,7 +38,7 @@ class _PaymentDetailsViweBodyState extends State<PaymentDetailsViweBody> {
         title: Center(
           child: Text(
             'Payment Details',
-            style: styleing.style25,
+            style: Styles.style25,
           ),
         ),
       ),

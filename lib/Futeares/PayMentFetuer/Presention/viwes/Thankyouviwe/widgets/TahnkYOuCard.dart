@@ -26,9 +26,9 @@ class ThankYouCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Thank you!", style: styleing.style25),
+              Text("Thank you!", style: Styles.style25),
               Text("Your transaction was successful",
-                  style: styleing.style20W400),
+                  style: Styles.style20W400),
               Paymentltemlnfo(Data: 'Date', Value: '01/24/2023'),
               Paymentltemlnfo(Data: 'Time', Value: '10:15 AM'),
               Paymentltemlnfo(Data: 'To', Value: 'Sam Louis'),

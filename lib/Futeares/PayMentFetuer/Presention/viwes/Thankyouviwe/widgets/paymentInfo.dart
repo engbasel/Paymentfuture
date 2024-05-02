@@ -15,9 +15,9 @@ class Paymentltemlnfo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
       child: Row(
         children: [
-          Text(Data, style: styleing.style18),
+          Text(Data, style: Styles.style18),
           const Spacer(),
-          Text(Value, style: styleing.style18W600),
+          Text(Value, style: Styles.style18W600),
         ],
       ),
     );

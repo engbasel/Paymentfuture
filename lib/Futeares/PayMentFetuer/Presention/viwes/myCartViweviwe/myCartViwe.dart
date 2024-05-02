@@ -1,21 +1,18 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/PaymentDetailsviwe/PayMentMethoListViwe.dart';
-import 'package:payapp/core/utls/CoustomBottom.dart';
-import 'package:svg_flutter/svg.dart';
-
-import 'package:payapp/core/utls/CoustomDivider.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/myCartViweviwe/widgets/RowOrderInfo.dart';
 import 'package:payapp/Futeares/PayMentFetuer/Presention/viwes/myCartViweviwe/widgets/TotalPrice.dart';
+import 'package:payapp/core/utls/CoustomBottom.dart';
+import 'package:payapp/core/utls/CoustomDivider.dart';
 import 'package:payapp/core/utls/style.dart';
+import 'package:svg_flutter/svg.dart';
 
-class mycartviwe extends StatelessWidget {
-  const mycartviwe({super.key});
+class MyCartView extends StatelessWidget {
+  const MyCartView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.white,
       appBar: AppBar(
         leading: Center(
           child: SvgPicture.asset(
@@ -27,7 +24,7 @@ class mycartviwe extends StatelessWidget {
         title: Center(
           child: Text(
             'My Cart',
-            style: styleing.style25,
+            style: Styles.style25,
           ),
         ),
       ),
@@ -73,13 +70,6 @@ class mycartviwe extends StatelessWidget {
         return const PaymentMethodsBottomSheet();
       },
     );
-    // Navigator.of(context).push(
-    //   MaterialPageRoute(
-    //     builder: (context) {
-    //       return const PaymentDetailsViweBody();
-    //     },
-    //   ),
-    // );
   }
 }
 
